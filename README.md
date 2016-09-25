@@ -8,7 +8,7 @@ npm i mongodb @alterior/mongo
 
 Now use `mongoProvider` to inject an instance of `mongodb.Db` into your application:
 
-```
+```typescript
 import { AppOptions } from '@alterior/core';
 import { mongoProvider } from '@alterior/mongo';
 import * as mongodb from 'mongodb';
@@ -22,7 +22,7 @@ class App {
 
 Now, you can inject `mongodb.Db` into your controllers:
 
-```
+```typescript
 import { Controller, Get } from '@alterior/core';
 import * as mongodb from 'mongodb';
 
