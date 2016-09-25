@@ -5,6 +5,8 @@
 
 Use this package if you want to connect to MongoDB from your [Alterior](https://github.com/alterior-mvc/alterior-core) application.
 
+## Accessing MongoDB from Alterior 
+
 ```
 npm i mongodb @alterior/mongo
 ```
@@ -44,3 +46,36 @@ class SampleController {
 ```
 
 You can pass any token into `mongoProvider`, which can be used to inject multiple database connections if necessary.
+
+## Storing Sessions in MongoDB
+
+This package also provides a connector for storing Express sessions in MongoDB using `mongo-connect`.
+
+```typescript
+import * as mongodb from 'mongodb';
+import { mongoProvider, mongoSession } from '@alterior/mongo';
+
+@AppOptions({
+	providers: [mongoProvider(mongodb.Db)]
+	middleware: [mongoSession(mongodb.Db, SESSION_SECRET)]
+})
+export class App { }
+```
+
+You can then access and modify session data from your route methods. We recommend you make an interface representing your session data.
+
+```typescript
+
+interface SessionData {
+	displayName : string;
+	cartTotal : number;
+}
+
+@Controller()
+class SampleController {
+	@Get('/cart/total') 
+	public get(session : SessionData) {
+		return session.cartTotal;
+	} 
+}
+```
