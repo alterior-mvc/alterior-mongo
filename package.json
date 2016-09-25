@@ -1,6 +1,7 @@
 {
   "name": "@alterior/mongo",
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.1", 
   "description": "MongoDB connector for Alterior applications",
   "main": "index.js",
   "typings": "index.d.ts",
