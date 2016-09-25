@@ -1,1 +1,1 @@
-export * from './mongo';
+export { mongoProvider } from './lib/mongo';
