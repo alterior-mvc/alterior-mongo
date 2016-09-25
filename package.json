@@ -1,7 +1,7 @@
 {
   "name": "@alterior/mongo",
   "private": false,
-  "version": "0.0.1", 
+  "version": "0.0.1",
   "description": "MongoDB connector for Alterior applications",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -23,6 +23,8 @@
   "homepage": "https://github.com/alterior-mvc/alterior-mongo#readme",
   "dependencies": {
     "@alterior/core": "0.0.6",
+    "connect-mongo": "^1.3.2",
+    "express-session": "^1.14.1",
     "mongodb": "^2.2.10"
   },
   "devDependencies": {
