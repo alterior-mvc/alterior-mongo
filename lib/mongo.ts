@@ -2,6 +2,10 @@ import { ValueProvider } from '@angular/core';
 
 import * as mongodb from 'mongodb';
 
+/**
+ * Provides a connection to MongoDB via dependency injection, using the given token `dbClass` as 
+ * the injection token.
+ */
 export function mongoProvider(dbClass : any, url? : string): Promise<ValueProvider> {
 	return internalMongoProvider(dbClass, url);
 }
