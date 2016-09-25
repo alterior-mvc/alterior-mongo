@@ -1,0 +1,23 @@
+{
+  "name": "@alterior/mongo",
+  "version": "0.0.1",
+  "description": "MongoDB connector for Alterior applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterior-mvc/alterior-mongo.git"
+  },
+  "author": "William Lahti <wilahti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alterior-mvc/alterior-mongo/issues"
+  },
+  "homepage": "https://github.com/alterior-mvc/alterior-mongo#readme",
+  "dependencies": {
+    "@alterior/core": "0.0.6",
+    "mongodb": "^2.2.10"
+  }
+}

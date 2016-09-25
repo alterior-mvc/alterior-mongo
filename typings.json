@@ -1,0 +1,10 @@
+{
+  "name": "@alterior/mongo",
+  "dependencies": {
+    "mongodb": "registry:npm/mongodb#2.1.0+20160721204323"
+  },
+  "globalDependencies": {
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
+    "node": "registry:dt/node#6.0.0+20160923124626"
+  }
+}
