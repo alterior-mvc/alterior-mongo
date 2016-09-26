@@ -1,6 +1,16 @@
 import * as assert from 'assert';
-import { mongoProvider, internalMongoProvider, MongoClientFactory } from './mongo';
+import { mongoCollection, mongoProvider, internalMongoProvider, MongoClientFactory } from './mongo';
 import * as mongodb from 'mongodb';
+
+describe("mongoCollection", () => {
+	it("should produce a factory provider", () => {
+		let provider = mongoCollection(mongodb.Db, 'users');
+
+		assert(provider.provide === 'mongo:users');
+		assert(provider.useFactory !== null);
+
+	});
+})
 
 describe("mongoProvider", () => {
 	it("should try to connect to mongo", done => {
