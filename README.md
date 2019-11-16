@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.org/alterior-mvc/alterior-mongo.svg?branch=master)](https://travis-ci.org/alterior-mvc/alterior-mongo)
 [![Join the chat at https://gitter.im/alterior-mvc/Lobby](https://badges.gitter.im/alterior-core/Lobby.svg)](https://gitter.im/alterior-mvc/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+**NOTE: This library is intended for use with Alterior 2.x. It is not 
+compatible with Alterior 3.x.**
+
 Use this package if you want to connect to MongoDB from your [Alterior](https://github.com/alterior-mvc/alterior-core) application.
 
 ## Accessing MongoDB from Alterior 
